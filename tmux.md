@@ -2,12 +2,12 @@
 
 ```bash
 # Session: A collection of windows. Sessions can be created, attached, or detached.
+# <meta> is control+b
 
 # New Session
 tmux new -s session_name
 
 # Detach from session
-# meta is control+b
 <meta> d or <meta> :detach
 
 # Rename session
@@ -28,6 +28,7 @@ tmux kill-session -t session_name
 
 ```bash
 # Window: A container for panes. Windows can be split into multiple panes.
+# <meta> is control+b
 
 # New session with named window
 tmux new -s mysesh -n mywin
@@ -59,9 +60,12 @@ tmux new -s mysesh -n mywin
 
 ```
 
-# Pane: A single terminal session within a window. Panes can be resized, moved, or closed.
+# Pane
 
 ```bash
+# Pane: A single terminal session within a window. Panes can be resized, moved, or closed.
+# <meta> is control+b
+
 # New horizontile split
 <meta> "
 
